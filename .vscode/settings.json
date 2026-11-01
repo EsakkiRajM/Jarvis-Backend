@@ -1,0 +1,36 @@
+{
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#756957",
+        "activityBar.activeBorder": "#e7e7e7",
+        "activityBar.background": "#756957",
+        "activityBar.foreground": "#e7e7e7",
+        "activityBar.inactiveForeground": "#e7e7e799",
+        "activityBarBadge.background": "#40bf8c",
+        "activityBarBadge.foreground": "#15202b",
+        "activityBarTop.activeBackground": "#756957",
+        "activityBarTop.activeBorder": "#e7e7e7",
+        "activityBarTop.background": "#756957",
+        "activityBarTop.foreground": "#e7e7e7",
+        "activityBarTop.inactiveForeground": "#e7e7e799",
+        "commandCenter.border": "#e7e7e799",
+        "commandCenter.foreground": "#e7e7e7",
+        "sash.hoverBorder": "#756957",
+        "statusBar.background": "#584f41",
+        "statusBar.debuggingBackground": "#584f41",
+        "statusBar.debuggingForeground": "#e7e7e7",
+        "statusBar.foreground": "#e7e7e7",
+        "statusBar.inactiveBackground": "#584f41",
+        "statusBarItem.hoverBackground": "#756957",
+        "statusBarItem.remoteBackground": "#0e1210",
+        "statusBarItem.remoteForeground": "#e7e7e7",
+        "titleBar.activeBackground": "#584f41",
+        "titleBar.activeForeground": "#e7e7e7",
+        "titleBar.inactiveBackground": "#584f4199",
+        "titleBar.inactiveForeground": "#e7e7e799"
+    },
+    
+    "peacock.color": "#584f41",
+    "python-envs.defaultEnvManager": "ms-python.python:system",
+    "python.defaultInterpreterPath": "D:\\Jarvis\\jarvis-backend\\venv\\Scripts\\python.exe"
+
+}
