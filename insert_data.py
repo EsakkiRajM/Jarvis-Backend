@@ -15,3 +15,4 @@ def insert_user(name, age, relationship):
 
     print(f"User '{name}' inserted successfully!")
 
+insert_user("Susila", 26, "Second Owner")
