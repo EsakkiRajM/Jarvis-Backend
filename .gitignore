@@ -1,6 +1,7 @@
 # Environment variables
 .env
 .env.*
+.gitignore
 
 # Allow example environment file
 !.env.example

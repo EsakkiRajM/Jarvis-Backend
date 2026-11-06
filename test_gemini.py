@@ -1,42 +1,25 @@
 import os
 from dotenv import load_dotenv
-from groq import Groq
+from google import genai
 
 load_dotenv()
 
-api_key = os.getenv("GROQ_API_KEY")
-
-if not api_key:
-    raise ValueError("GROQ_API_KEY not found in .env file")
-
-client = Groq(api_key=api_key)
+client = genai.Client(
+    api_key=os.getenv("GEMINI_API_KEY")
+)
 
 try:
-    print("Connecting to Groq...", flush=True)
+    print("Connecting to Gemini...", flush=True)
 
-    response = client.chat.completions.create(
-        model="openai/gpt-oss-120b",
-        messages=[
-            {
-                "role": "system",
-                "content": "You are Jarvis, an intelligent AI assistant. Respond naturally and concisely."
-            },
-            {
-                "role": "user",
-                "content": "Hello Jarvis! Introduce yourself."
-            }
-        ],
-        timeout=30
+    response = client.models.generate_content(
+        model="gemini-3.5-flash",
+        contents="Hello Jarvis! Introduce yourself."
     )
 
-    print("\nGroq Response:", flush=True)
-
-    print(
-        response.choices[0].message.content,
-        flush=True
-    )
+    print("\nGemini Response:")
+    print(response.text)
 
 except Exception as e:
-    print("\nGroq Error:", flush=True)
-    print("Error Type:", type(e).__name__, flush=True)
-    print("Details:", str(e), flush=True)
+    print("\nGemini Error:")
+    print(type(e).__name__)
+    print(str(e))
